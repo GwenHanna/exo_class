@@ -1,0 +1,25 @@
+#choicePersonnage {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.active {
+  display: block;
+}
+
+.in-active {
+  display: none !important;
+}
+
+.humain, .elfe, .orc, #gamePlay {
+  display: flex;
+}
+
+#gamePlay {
+  width: 100%;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
