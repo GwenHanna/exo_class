@@ -1,0 +1,35 @@
+{
+  "name": "doom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "parcel": {
+    "extends": "@parcel/config-default",
+    "transformers": {
+      "*.svg": [
+        "@parcel/transformer-svg"
+      ],
+      "*.png": [
+        "@parcel/transformer-inline"
+      ],
+      "*.jpg": [
+        "@parcel/transformer-inline"
+      ]
+    },
+    "packagers": {
+      "*.svg": "@parcel/packager-raw",
+      "*.png": "@parcel/packager-raw",
+      "*.jpg": "@parcel/packager-raw"
+    }
+  },
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}
